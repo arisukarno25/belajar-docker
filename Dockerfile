@@ -2,7 +2,7 @@
 FROM docker/whalesay:latest
 
 #install fortunes
-RUN apt -y update && apt isntall -y fortunes
+RUN apt -y update && apt install -y fortunes
 
 #run command
 CMD /usr/games/fortune -a | cowsay
